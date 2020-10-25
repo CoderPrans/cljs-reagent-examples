@@ -1,0 +1,10 @@
+{:source-paths ["src"]
+
+ :dependencies [[reagent "0.10.0"]]
+
+ :builds {:client {:output-dir "public/"
+                   :asset-path "./"
+                   :target :browser
+                   :modules {:client {:init-fn app.main/main!}}
+                   :devtools {:http-root "public"
+                              :http-port 8080}}}}
